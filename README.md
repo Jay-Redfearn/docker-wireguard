@@ -88,6 +88,10 @@ On PC or Mac, download the Wireguard app. To get the .conf file, you will need t
 Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses.
 
 
+# Screenshots
+
+Screenshots of the Wireguard Proof of Completion are provided on the main branch.
+
 # Sources
 
 http://www.digitalocean.com
