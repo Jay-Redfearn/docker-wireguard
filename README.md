@@ -43,35 +43,35 @@ Type the following commands…
 
 Paste the following into the .yml file…
 
-“version: '3.8'
-services:
-  wireguard:
-    container_name: wireguard
-    image: linuxserver/wireguard
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Hong_Kong
-      - SERVERURL=1.2.3.4
-      - SERVERPORT=51820
-      - PEERS=pc1,pc2,phone1
-      - PEERDNS=auto
-      - INTERNAL_SUBNET=10.0.0.0
-    ports:
-      - 51820:51820/udp
-    volumes:
-      - type: bind
-        source: ./config/
-        target: /config/
-      - type: bind
-        source: /lib/modules
-        target: /lib/modules
-    restart: always
-    cap_add:
-      - NET_ADMIN
-      - SYS_MODULE
-    sysctls:
-      - net.ipv4.conf.all.src_valid_mark=1”
+	“version: '3.8'
+	services:
+	  wireguard:
+	    container_name: wireguard
+	    image: linuxserver/wireguard
+	    environment:
+	      - PUID=1000
+	      - PGID=1000
+	      - TZ=Asia/Hong_Kong
+	      - SERVERURL=1.2.3.4
+	      - SERVERPORT=51820
+	      - PEERS=pc1,pc2,phone1
+	      - PEERDNS=auto
+	      - INTERNAL_SUBNET=10.0.0.0
+	    ports:
+	      - 51820:51820/udp
+	    volumes:
+	      - type: bind
+		source: ./config/
+		target: /config/
+	      - type: bind
+		source: /lib/modules
+		target: /lib/modules
+	    restart: always
+	    cap_add:
+	      - NET_ADMIN
+	      - SYS_MODULE
+	    sysctls:
+	      - net.ipv4.conf.all.src_valid_mark=1”
 
 In the .yml file, change the text next to “SERVERURL=” as your IP address that you used to log into the droplet. Change the text next to “TZ=” to “America/Chicago”.
 
