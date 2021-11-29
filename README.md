@@ -90,7 +90,7 @@ Go to IPLeak.net in your browser and take a screenshot of the settings with the 
 
 # Screenshots
 
-Screenshots of the Wireguard Proof of Completion are provided on the main branch.
+Screenshots of the Wireguard proof of completion are provided on the main branch.
 
 # Sources
 
