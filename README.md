@@ -12,13 +12,13 @@ I then went into the dashboard to create a droplet. I chose the following config
 
 I created a new SSH key by going into my macOS Terminal and typing “ssh-keygen”. I was prompted with a file in which to save the key and I named the file “Ubuntu-SSH”. After, the system asked me to create a passphrase, which I created for the SSH key. Two files, one with no extension and another with a .pub extension were created (Ubuntu-SSH and Ubuntu-SSH.pub, respectively).
 
-I also did “chmod 400 ubuntu-ssh” and “chmod 400 ubuntu-ssh.pub” so that the Terminal will be able to use the keys to log into the droplet. After that was done, I moved the files into the .ssh folder with the “mv” command.
+I also did “chmod 400 ubuntu-ssh” and “chmod 400 ubuntu-ssh.pub” so that the Terminal will be able to use the keys to log into the droplet. After that was done, I moved the files into the .ssh folder with the “mv” command. I added the ssh keys to the system permanently by typing “ssh-add .ssh/ubuntu-ssh”.
 
 After the files were created, I opened the contents of the .pub file and copied the contents over to the “SSH key content must be a valid SSH key” field under the “Add public SSH key” window in DigitalOcean. I named the public SSH key “Ubuntu-SSH”.
 
 I named the hostname as “ubuntu-redfearn”. I then created the droplet.
 
-To log into the droplet, I typed “ssh -I ~/.ssh/ubuntu-ssh root@xxx.xxx.xxx.xxx” where x represents my IP address.
+To log into the droplet, I typed “ssh root@xxx.xxx.xxx.xxx” where x represents my IP address.
 
 
 # Docker Installation
@@ -83,15 +83,18 @@ On iPhone or another mobile phone, install the WireGuard app. Open the app and c
 
 Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means Wireguard was installed correctly.
 
+On PC or Mac, download the Wireguard app. To get the .conf file, you will need to type “scp root@xxx.xxx.xxx.xxx:~/wireguard/config/peer_pc1/peer_pc1.conf ~/” where x is the IP address to your droplet. After you downloaded the .conf file, import it into Wireguard and start the VPN.
 
-# Screenshots
-
-Screenshots of the Wireguard VPN proof of completion are provided on the main branch.
+Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses.
 
 
 # Sources
 
 http://www.digitalocean.com
+
+https://stackoverflow.com/questions/3466626/how-to-permanently-add-a-private-key-with-ssh-add-on-ubuntu
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/9571/89/how-to-download-a-file-via-ssh/
 
 https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/openssh/
 
@@ -100,4 +103,3 @@ https://thematrix.dev/setup-wireguard-vpn-server-with-docker/
 https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 https://stackoverflow.com/questions/29933918/ssh-key-permissions-0644-for-id-rsa-pub-are-too-open-on-mac#37779390
-
