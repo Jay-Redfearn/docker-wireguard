@@ -83,8 +83,6 @@ On iPhone or another mobile phone, install the WireGuard app. Open the app and c
 
 Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means Wireguard was installed correctly.
 
-![image](https://user-images.githubusercontent.com/41350159/143811747-a37cee29-7f54-4798-a92d-2e5c14311ba4.png)
-
 
 # Screenshots
 
