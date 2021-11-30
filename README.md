@@ -75,15 +75,15 @@ Paste the following into the .yml file…
 
 In the .yml file, change the text next to “SERVERURL=” as your IP address that you used to log into the droplet. Change the text next to “TZ=” to “America/Chicago”.
 
-Make sure you are in the “~/wireguard” folder by using the cd command. Type “docker-compose up -d” to install Wireguard.
+Make sure you are in the “~/wireguard” folder by using the cd command. Type “docker-compose up -d” to install WireGuard.
 
-Type “docker-compose logs -f wireguard” to get the QR codes for Wireguard. Use the “PEER phone 1” QR code for the mobile device that you use to log into the VPN.
+Type “docker-compose logs -f wireguard” to get the QR codes for WireGuard. Use the “PEER phone 1” QR code for the mobile device that you use to log into the VPN.
 
 On iPhone or another mobile phone, install the WireGuard app. Open the app and click on the “+” in the top right corner, then click “Create from QR code”. Name the WireGuard configuration and allow the phone to apply the permission to your settings.
 
-Go to ipleak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means Wireguard was installed correctly.
+Go to ipleak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means WireGuard was installed correctly.
 
-On PC or Mac, download the Wireguard app. To get the .conf file, you will need to type “scp root@xxx.xxx.xxx.xxx:~/wireguard/config/peer_pc1/peer_pc1.conf ~/” where x is the IP address to your droplet. After you downloaded the .conf file, import it into Wireguard and start the VPN.
+On PC or Mac, download the WireGuard app. To get the .conf file, you will need to type “scp root@xxx.xxx.xxx.xxx:~/wireguard/config/peer_pc1/peer_pc1.conf ~/” where x is the IP address to your droplet. After you downloaded the .conf file, import it into WireGuard and start the VPN.
 
 Go to ipleak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses.
 
