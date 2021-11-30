@@ -35,7 +35,7 @@ Test the Docker Compose installation by typing “docker-compose –version”.
 Make sure Docker is running by typing “sudo service docker status”. If it is not running, type “sudo service docker start”.
 
 
-# Wireguard Installation
+# WireGuard Installation
 
 Type the following commands…
 
@@ -90,7 +90,7 @@ Go to IPLeak.net in your browser and take a screenshot of the settings with the 
 
 # Screenshots
 
-Screenshots of the Wireguard proof of completion are provided on the main branch.
+Screenshots of the WireGuard proof of completion are provided on the main branch.
 
 # Sources
 
