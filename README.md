@@ -81,11 +81,11 @@ Type “docker-compose logs -f wireguard” to get the QR codes for Wireguard. U
 
 On iPhone or another mobile phone, install the WireGuard app. Open the app and click on the “+” in the top right corner, then click “Create from QR code”. Name the WireGuard configuration and allow the phone to apply the permission to your settings.
 
-Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means Wireguard was installed correctly.
+Go to ipleak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses, which means Wireguard was installed correctly.
 
 On PC or Mac, download the Wireguard app. To get the .conf file, you will need to type “scp root@xxx.xxx.xxx.xxx:~/wireguard/config/peer_pc1/peer_pc1.conf ~/” where x is the IP address to your droplet. After you downloaded the .conf file, import it into Wireguard and start the VPN.
 
-Go to IPLeak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses.
+Go to ipleak.net in your browser and take a screenshot of the settings with the VPN off. Do the same with the VPN turned on. You should have two different IP addresses.
 
 
 # Screenshots
